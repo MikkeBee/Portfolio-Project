@@ -1,16 +1,69 @@
 body {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(29, 29, 29);
   color: rgb(29, 29, 29);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  margin: 0 auto;
+}
+
+/*h1 {
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+nav {
+  text-align: center;
+  background-color: black;
+  padding-bottom: 20px;
+}*/
+
+.bg-image {
+  background-image: url("nameplate.jpg");
+  min-height: 120px;
+  background-position: center;
+  background-size: 70% auto;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: black;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navContainer {
+  position: absolute;
+  margin: 80px;
+  width: auto;
+}
+
+.linkDiv {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 header ul li a {
   text-decoration: none;
+  color: white;
+  margin-right: 40px;
 }
 
 header ul li {
   display: inline-block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  background-color: white;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #undercon {
