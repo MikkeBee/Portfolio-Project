@@ -6,21 +6,15 @@ body {
   margin: 0 auto;
 }
 
-/*h1 {
-  text-align: center;
-  color: white;
-  background-color: black;
-}
-
 nav {
   text-align: center;
-  background-color: black;
-  padding-bottom: 20px;
-}*/
+  position: relative;
+  min-height: 180px;
+}
 
 .bg-image {
   background-image: url("nameplate.jpg");
-  min-height: 120px;
+  min-height: 180px;
   background-position: center;
   background-size: 70% auto;
   background-repeat: no-repeat;
@@ -30,28 +24,26 @@ nav {
   margin: 0 auto;
 }
 
-.navContainer {
-  position: absolute;
-  margin: 80px;
-  width: auto;
-}
-
-.linkDiv {
-  color: #f2f2f2;
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-header ul li a {
+header li a {
   text-decoration: none;
   color: white;
-  margin-right: 40px;
+  margin: 40px;
+}
+
+.linkSection {
+  position: absolute;
+  top: 130px;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 header ul li {
   display: inline-block;
+}
+
+main {
+  margin-top: -15px;
 }
 
 .container {
