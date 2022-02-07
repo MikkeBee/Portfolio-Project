@@ -1,12 +1,20 @@
 body {
   background-color: rgb(29, 29, 29);
+  background-image: linear-gradient(
+    to right,
+    black,
+    #d70a84,
+    #571580,
+    #d70a84,
+    black
+  );
+  background-repeat: no-repeat;
   color: rgb(29, 29, 29);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  margin: 0 auto;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0 5rem;
 }
 
-nav {
+.navigator {
   text-align: center;
   position: relative;
   min-height: 180px;
@@ -20,7 +28,7 @@ nav {
   background-repeat: no-repeat;
   position: relative;
   background-color: black;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
 }
 
@@ -43,7 +51,7 @@ header ul li {
 }
 
 main {
-  margin-top: -15px;
+  margin-top: -16px;
 }
 
 .container {
@@ -86,7 +94,8 @@ section {
   padding-bottom: 10px;
 }
 
-footer {
+.bigFoot {
+  background-color: black;
   text-align: center;
   font-size: 12px;
 }
