@@ -1,20 +1,37 @@
 body {
   background-color: rgb(29, 29, 29);
-  background-image: linear-gradient(
-    to right,
-    black,
-    #d70a84,
-    #571580,
-    #d70a84,
-    black
-  );
-  background-repeat: no-repeat;
   color: rgb(29, 29, 29);
   font-family: "Roboto Condensed", sans-serif;
-  margin: 0 5rem;
 }
 
-.navigator {
+.hero-content {
+  background-image: url("scrum\ kopio.jpeg");
+  min-height: 600px;
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: relative;
+  max-width: 75rem;
+  margin: 0 auto;
+  margin-top: -2%;
+}
+
+.hero-title {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  text-shadow: 0 0 20px #000000, 0 0 20px #000000, 0 0 20px #000000;
+}
+
+.nameplate {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+/* .navigator {
   text-align: center;
   position: relative;
   min-height: 180px;
@@ -48,11 +65,7 @@ header li a {
 
 header ul li {
   display: inline-block;
-}
-
-main {
-  margin-top: -16px;
-}
+} */
 
 .container {
   max-width: 1200px;
@@ -98,4 +111,48 @@ section {
   background-color: black;
   text-align: center;
   font-size: 12px;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.paperworkTitle {
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: -5px;
+}
+
+.nameLabel {
+  padding-right: 5px;
+}
+
+.nameInput {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.emailLabel {
+  padding-right: 6px;
+}
+
+.emailInput {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.bigLabel {
+  margin-left: -12px;
+  padding-right: 3px;
+}
+
+.bigInput {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.theButton {
+  margin-bottom: 10px;
+  border-radius: 5px;
 }

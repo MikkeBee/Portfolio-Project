@@ -11,19 +11,23 @@
     <title>Mikke's Portfolio Project</title>
 </head>
 <body>
-    <header>
-        <div class="bg-image">
-        <nav class="navigator">
-        <ul class="linkSection">
-            <li><a href="#myProject">Projects</a></li>
-            <li><a href="#aboutMe">About Me</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#moreAboutBCH">More about BCH</a></li>
-        </ul> 
-    </nav>
-</div>
-</div>
+    <header class="hero">
+        
+        <div class="hero-content">
+            <img src="nameplate.png" alt="Michael Blakley" class="nameplate">
+           <h1 class="hero-title">
+               Welcome to my Portfolio 
+           </h1>
+           
+
+           <h2 class="hero-subtitle">
+                
+           </h2>
+           
+        </div>
+    
     </header>
+    
     <main>
         <p>
             <div class="container">
@@ -52,6 +56,16 @@
     </p>
 </main>
     <footer class="bigFoot">
+        <form class="paperwork">
+            <p class="paperworkTitle">Contact me!</p>
+        <p class="nameBox"><label for="Name" class="nameLabel">Name</label>
+        <input type="text" name="Name" class="nameInput"></p>
+        <p class="emailBox"><label for="Email" class="emailLabel">Email</label>
+        <input type="text" name="Email" class="emailInput"></p>
+        <p class="textBox"><label for="bigText" class="bigLabel">Message</label>
+        <textarea name="bigText" class="bigInput" cols="30" rows="8"></textarea></p>
+        <button class="theButton">Send it!</button>
+    </form>
         <p>Did you know I'm on CodeWars?</p>
         <img src="https://www.codewars.com/users/MikkeBee/badges/small">
     </footer>
