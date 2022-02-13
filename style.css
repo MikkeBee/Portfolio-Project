@@ -54,6 +54,11 @@ ul li a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #0e06f7;
+  text-shadow: 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff;
+}
+
 .hero-title {
   display: flex;
   justify-content: center;
