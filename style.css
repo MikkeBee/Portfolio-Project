@@ -126,6 +126,8 @@ main {
 
 .myPhoto {
   padding-bottom: 10px;
+  width: 100%;
+  height: 100%;
 }
 
 #alltheSkills {
@@ -151,13 +153,6 @@ main {
 .comingSoon {
   width: 450px;
   height: 303px;
-  padding-bottom: 10px;
-}
-
-#learnMore {
-  width: 350px;
-  height: 303px;
-  display: block;
   padding-bottom: 10px;
 }
 
