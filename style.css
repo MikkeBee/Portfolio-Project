@@ -10,26 +10,54 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.hero-content {
+.hero {
   background-image: url("scrum\ kopio.jpeg");
   min-height: 40rem;
+  width: 100%;
+  height: auto;
   background-position: center;
   background-size: 100% auto;
   /* background-attachment: fixed; */
   background-repeat: no-repeat;
   position: relative;
-  max-width: 75rem;
   margin: 0 auto;
   margin-top: -2%;
 }
 
+/* .hero::before {
+  content: "";
+  background-color: #000000;
+  opacity: 0.4;
+  position: absolute;
+  min-height: 40rem;
+  width: 100%;
+  top: 1px;
+  left: 0;
+} */
+
+/* Hero image styling */
+/* .hero-content {
+  background-image: url("scrum\ kopio.jpeg");
+  min-height: 40rem;
+  background-position: center;
+  background-size: 100% auto;
+  /* background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  max-width: 75rem;
+  margin: 0 auto;
+  margin-top: -2%;
+} */
+
 .naviBar {
-  padding-top: 3rem;
-  padding-right: 2rem;
+  position: fixed;
   color: white;
+  font-size: 18px;
   display: flex;
   justify-content: space-between;
   text-shadow: 0 0 10px #353535, 0 0 10px #353535, 0 0 10px #353535;
+  width: 100%;
+  padding: 4rem 1.5rem 0;
 }
 
 .itsameMikke {
@@ -55,8 +83,10 @@ ul li a {
   text-decoration: none;
 }
 
+/* on hover adds drop shadow and switches colour to make the links more readable*/
 a:hover {
   color: #0e06f7;
+  text-decoration: underline;
   text-shadow: 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff;
 }
 
@@ -66,14 +96,13 @@ a:hover {
   align-items: center;
   text-align: center;
   color: white;
-  padding-top: 13rem;
+  padding-top: 15rem;
   font-size: 60px;
   font-weight: 400;
   text-shadow: 0 0 20px #000000, 0 0 20px #000000, 0 0 20px #000000;
 }
 
 main {
-  max-width: 75rem;
   margin: 0 auto;
 }
 
@@ -85,15 +114,17 @@ main {
   padding-bottom: 2rem;
 }
 
+.myProject {
+  margin-bottom: 1.5rem;
+}
+
+/*Outer div for card section. For Projects and Skills section*/
 .cardset {
   display: flex;
   justify-content: space-around;
 }
 
-.myProject {
-  margin-bottom: 1.5rem;
-}
-
+/*inner div that wraps individual cards*/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 0 1rem;
@@ -101,10 +132,12 @@ main {
   transition: 0.3s;
 }
 
+/* div for card content except image*/
 .card1container {
   padding: 0.5rem 0.5rem;
 }
 
+/*Outer section for About Me*/
 #meAbout {
   background-color: #e1e1e1;
   padding-top: 3.5rem;
@@ -117,20 +150,24 @@ main {
   display: flex;
 }
 
+/* header */
 .aboutMe {
   margin-bottom: 1.5rem;
 }
 
+/* about me paragraph styling*/
 .infoAboutMe {
   margin-right: 1.5rem;
 }
 
+/* my photo, obviously*/
 .myPhoto {
   padding-bottom: 10px;
   width: 100%;
   height: 100%;
 }
 
+/*skill section*/
 #alltheSkills {
   background-color: #ffffff;
   padding-top: 3.5rem;
@@ -139,24 +176,27 @@ main {
   padding-bottom: 2rem;
 }
 
+/*header*/
 .skills {
   margin-bottom: 1.5rem;
 }
 
-.soSkillfulDivBox {
+/*inner div that wraps individual cards*/
+.skillCard {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 0.7rem;
+  padding: 0.5rem;
 }
 
-.skillInfo {
-  margin-left: 1.5rem;
+/* div for card content except image*/
+.skillCardContainer {
+  padding: 0.5rem 0.5rem;
 }
 
-.comingSoon {
-  width: 450px;
-  height: 303px;
-  padding-bottom: 10px;
-}
-
+/* footer section styling*/
 #bigFoot {
   background-color: black;
   text-align: center;
@@ -164,16 +204,17 @@ main {
   color: white;
   padding-top: 5px;
   padding-bottom: 25px;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
+/*footer form styling*/
 .paperwork {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
+/* header */
 .paperworkTitle {
   font-size: 25px;
   margin-top: 1.5rem;

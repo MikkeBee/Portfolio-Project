@@ -4,29 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio project for BC Helsinki full-stack developer programme"
+    />
+    <meta name="author" content="Michael Blakley" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Voltaire&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/06ae1c778f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Mikke's Portfolio Project</title>
   </head>
   <body>
     <header class="hero">
+      <nav class="naviBar">
+        <h2 class="itsameMikke">Michael Blakley</h2>
+        <ul>
+          <li><a href="#projectSect">Projects</a></li>
+          <li><a href="#meAbout">About Me</a></li>
+          <li><a href="#alltheSkills">Skills</a></li>
+          <li><a href="#bigFoot">Contact Me</a></li>
+        </ul>
+      </nav>
       <div class="hero-content">
-        <nav class="naviBar">
-          <h2 class="itsameMikke">Michael Blakley</h2>
-          <ul>
-            <li><a href="#projectSect">Projects</a></li>
-            <li><a href="#meAbout">About Me</a></li>
-            <li><a href="#alltheSkills">Skills</a></li>
-            <li><a href="#bigFoot">Contact Me</a></li>
-          </ul>
-        </nav>
+        
         <h1 class="hero-title">Welcome to my Portfolio</h1>
-        <h2 class="hero-subtitle"></h2>
       </div>
     </header>
 
@@ -100,30 +107,43 @@
             Quaerat, perspiciatis. Nihil vel ea, praesentium ipsam amet soluta
             pariatur.
           </p>
-          <img class="myPhoto" src="mikke-rugby1point1.jpg" />
+          <img
+            class="myPhoto"
+            src="mikke-rugby1point1.jpg"
+            alt="Photo of Michael"
+          />
         </div>
       </section>
       <section id="alltheSkills">
         <h2 class="skills">Skills</h2>
-        <div class="soSkillfulDivBox">
-          <img class="comingSoon" src="comingsoon.jpeg" />
-          <p class="skillInfo">
-            I have lots of skills. Coding is one of them, but it isn't very good
-            at the moment. I have other skills as well. I'll tell you more about
-            them later. Excitement. No biggie. Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Architecto ipsum aperiam quaerat
-            provident perspiciatis maxime dignissimos molestias ad, et illum
-            numquam ipsam ipsa nobis repellendus facere impedit aut earum est,
-            incidunt enim. Eligendi molestias accusamus quo velit? Doloribus,
-            nihil. Accusantium, soluta, fuga quisquam atque perspiciatis
-            pariatur ducimus adipisci laudantium velit vel dolor provident
-            deleniti non ex accusamus libero expedita, numquam saepe esse ipsam
-            natus doloribus? Maiores, quaerat consequatur. Tempora adipisci,
-            soluta in dolore a dolor repudiandae, harum accusamus aspernatur
-            aperiam quidem et, assumenda numquam facere perferendis. Nostrum
-            esse earum nulla odit corporis. Ratione odit voluptatum sapiente
-            ipsa labore, exercitationem fugiat.
-          </p>
+        <div class="cardset">
+          <div class="skillCard">
+            <i class="fa-brands fa-html5 fa-10x"></i>
+            <div class="skillCardContainer">
+              <h4><b>HTML</b></h4>
+              <progress id="htmlPogress" value="50" max="100"> 50% </progress>
+            </div>
+          </div>
+          <div class="skillCard">
+            <i class="fa-brands fa-css3 fa-10x"></i>
+            <div class="skillCardContainer">
+              <h4><b>CSS</b></h4>
+              <progress id="cssPogress" value="50" max="100"> 50% </progress>
+            </div>
+          </div>
+          <div class="skillCard">
+            <i class="fa-brands fa-js fa-10x"></i>
+            <div class="skillCardContainer">
+              <h4><b>JavaScript</b></h4>
+              <progress id="jsPogress" value="30" max="100"> 30% </progress>
+            </div>
+          </div>
+          <div class="skillCard">
+            <i class="fa-solid fa-beer-mug-empty fa-10x"></i>
+            <div class="skillCardContainer">
+              <h4><b>Other</b></h4>
+              <progress id="otherPogress" value="90" max="100"> 90% </progress>
+            </div>
         </div>
       </section>
     </main>
@@ -131,17 +151,18 @@
       <form class="paperwork">
         <p class="paperworkTitle">Contact me!</p>
         <p class="nameBox">
-          <label for="Name" class="nameLabel">Name</label>
-          <input type="text" name="Name" class="nameInput" />
+          <label for="#name" class="nameLabel">Name</label>
+          <input type="text" name="Name" id="#name" class="nameInput" />
         </p>
         <p class="emailBox">
-          <label for="Email" class="emailLabel">Email</label>
-          <input type="text" name="Email" class="emailInput" />
+          <label for="#email" class="emailLabel">Email</label>
+          <input type="text" name="Email" id="#email" class="emailInput" />
         </p>
         <p class="textBox">
-          <label for="bigText" class="bigLabel">Message</label>
+          <label for="#textbox" class="bigLabel">Message</label>
           <textarea
             name="bigText"
+            id="#textbox"
             class="bigInput"
             cols="30"
             rows="8"
@@ -150,7 +171,13 @@
         <button class="theButton">Send it!</button>
       </form>
       <p>Did you know I'm on CodeWars?</p>
-      <img src="https://www.codewars.com/users/MikkeBee/badges/small" />
+
+      <img
+        src="https://www.codewars.com/users/MikkeBee/badges/small"
+        alt="Codewars badge"
+      />
+      <!-- Temporary br tags until better styling can be made -->
+      <br /><br />
       <p>Copyright © My Website 2022</p>
     </footer>
   </body>
