@@ -21,6 +21,7 @@
     <title>Mikke's Portfolio Project</title>
   </head>
   <body>
+    
     <header class="hero">
       <nav class="naviBar">
         <h2 class="itsameMikke">Michael Blakley</h2>
@@ -38,6 +39,7 @@
     </header>
 
     <main>
+      <i class="fa-solid fa-circle-arrow-up" id="arrowUp"></i>
       <section id="projectSect">
         <h2 class="myProject">Projects</h2>
         <div class="cardset">
@@ -116,7 +118,7 @@
       </section>
       <section id="alltheSkills">
         <h2 class="skills">Skills</h2>
-        <div class="cardset">
+        <div class="skillCardset">
           <div class="skillCard">
             <i class="fa-brands fa-html5 fa-10x"></i>
             <div class="skillCardContainer">
@@ -138,13 +140,30 @@
               <progress id="jsPogress" value="30" max="100"> 30% </progress>
             </div>
           </div>
-          <div class="skillCard">
-            <i class="fa-solid fa-beer-mug-empty fa-10x"></i>
-            <div class="skillCardContainer">
-              <h4><b>Other</b></h4>
-              <progress id="otherPogress" value="90" max="100"> 90% </progress>
-            </div>
+        <div class="skillCard">
+          <i class="fa-solid fa-pen-ruler fa-10x"></i>
+          <div class="skillCardContainer">
+            <h4><b>UI Design</b></h4>
+            <progress id="uiPogress" value="40" max="100"> 40% </progress>
+          </div>
+      </div>
+      <div class="skillCard">
+        <i class="fa-solid fa-list-check fa-10x"></i>
+        <div class="skillCardContainer">
+          <h4><b>Project Management</b></h4>
+          <progress id="uiPogress" value="80" max="100"> 80% </progress>
         </div>
+    </div>
+    <div class="skillCard">
+      <i class="fa-solid fa-beer-mug-empty fa-10x"></i>
+      <div class="skillCardContainer">
+        <h4><b>Other</b></h4>
+        <progress id="otherPogress" value="90" max="100"> 90% </progress>
+      </div>
+  </div>
+
+
+        
       </section>
     </main>
     <footer id="bigFoot">
@@ -180,5 +199,6 @@
       <br /><br />
       <p>Copyright © My Website 2022</p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

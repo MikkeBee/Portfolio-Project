@@ -10,6 +10,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+/*hero image plus styling */
 .hero {
   background-image: url("scrum\ kopio.jpeg");
   min-height: 40rem;
@@ -21,33 +22,20 @@ body {
   background-repeat: no-repeat;
   position: relative;
   margin: 0 auto;
-  margin-top: -2%;
 }
 
-/* .hero::before {
+/* background for navbar on scroll*/
+.hero::before {
   content: "";
   background-color: #000000;
-  opacity: 0.4;
+  opacity: 0.3;
   position: absolute;
   min-height: 40rem;
   width: 100%;
   top: 1px;
   left: 0;
-} */
-
-/* Hero image styling */
-/* .hero-content {
-  background-image: url("scrum\ kopio.jpeg");
-  min-height: 40rem;
-  background-position: center;
-  background-size: 100% auto;
-  /* background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: relative;
-  max-width: 75rem;
-  margin: 0 auto;
-  margin-top: -2%;
-} */
+  display: none;
+}
 
 .naviBar {
   position: fixed;
@@ -65,7 +53,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   margin-left: 5rem;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 ul {
@@ -102,6 +90,26 @@ a:hover {
   text-shadow: 0 0 20px #000000, 0 0 20px #000000, 0 0 20px #000000;
 }
 
+.headerBack {
+  background-color: #2c2d70;
+}
+
+/* To top arrow button */
+#arrowUp {
+  position: fixed;
+  font-size: 1.5rem;
+  right: 3rem;
+  bottom: 3rem;
+  z-index: 100;
+  font-size: 50px;
+  color: #2c2d70;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  text-shadow: 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff;
+  display: none;
+}
+
 main {
   margin: 0 auto;
 }
@@ -118,7 +126,7 @@ main {
   margin-bottom: 1.5rem;
 }
 
-/*Outer div for card section. For Projects and Skills section*/
+/*Outer div for card section. For Projects*/
 .cardset {
   display: flex;
   justify-content: space-around;
@@ -167,6 +175,13 @@ main {
   height: 100%;
 }
 
+/* styling for Skill section cards*/
+.skillCardset {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 /*skill section*/
 #alltheSkills {
   background-color: #ffffff;
@@ -188,6 +203,7 @@ main {
   flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 0 0.7rem;
+  margin-bottom: 1rem;
   padding: 0.5rem;
 }
 
