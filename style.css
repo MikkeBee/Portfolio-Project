@@ -25,7 +25,7 @@ body {
 }
 
 /* background for navbar on scroll*/
-.hero::before {
+/* .hero::after {
   content: "";
   background-color: #000000;
   opacity: 0.3;
@@ -35,7 +35,7 @@ body {
   top: 1px;
   left: 0;
   display: none;
-}
+} */
 
 .naviBar {
   position: fixed;
@@ -45,15 +45,23 @@ body {
   justify-content: space-between;
   text-shadow: 0 0 10px #353535, 0 0 10px #353535, 0 0 10px #353535;
   width: 100%;
-  padding: 4rem 1.5rem 0;
+  margin-top: -1rem;
+  padding: 3rem 1.5rem 0;
+  text-decoration: none;
 }
 
 .itsameMikke {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  text-decoration: none;
   margin-left: 5rem;
   font-weight: 600;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 ul {
@@ -64,11 +72,6 @@ ul {
 
 li {
   padding: 1rem;
-}
-
-ul li a {
-  color: #ffffff;
-  text-decoration: none;
 }
 
 /* on hover adds drop shadow and switches colour to make the links more readable*/
@@ -137,12 +140,16 @@ main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 0 1rem;
   padding: 0.5rem;
-  transition: 0.3s;
+  border-radius: 5px;
 }
 
 /* div for card content except image*/
 .card1container {
   padding: 0.5rem 0.5rem;
+}
+
+.card1container a {
+  color: #2023bd;
 }
 
 /*Outer section for About Me*/
@@ -205,6 +212,7 @@ main {
   margin: 0 0.7rem;
   margin-bottom: 1rem;
   padding: 0.5rem;
+  border-radius: 5px;
 }
 
 /* div for card content except image*/
