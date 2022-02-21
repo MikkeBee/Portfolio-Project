@@ -1,60 +1,46 @@
 const navi = document.querySelector(".naviBar");
 const button = document.querySelector("#arrowUp");
-// const mobButton = document.querySelector("#mobileButton");
-// const nav = document.querySelector("nav");
+const mobButton = document.querySelector("#mobileButton");
+const nav = document.querySelector("nav");
+const links = document.querySelectorAll("nav ul li a");
 
-// let links = document.querySelectorAll("nav ul li a");
-
+//On scroll activate scrollFunction
 window.onscroll = function () {
   scrollFunction();
 };
 
+//When activated, function changes background colour and changes back-to-top button style
 const scrollFunction = () => {
-  if (
-    document.body.scrollTop > 200 ||
-    document.documentElement.scrollTop > 200
-  ) {
-    navi.style.backgroundColor = "#2c2d70";
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    navi.classList.add("bg");
     button.style.display = "block";
   } else {
     button.style.display = "none";
-    navi.style.backgroundColor = "transparent";
+    navi.classList.remove("bg");
   }
 };
 
+// when back-to-top button is pressed (using eventListener) this function will activate and scroll back to the top
 const getToTop = () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 };
 
-// const mobMenu = () => {
-//   for (let i = 0; i < links.length; i++) {
-//     links[i].addEventListener("click", mobMenu);
-//   }
-//   if (nav.classList.contains("responsive")) {
-//     nav.classList.remove("responsive");
-//     document.body.style.overflow = "";
-//   } else {
-//     nav.classList.add("responsive");
-//     document.body.style.overflow = "hidden";
-//   }
-// };
+//Upon hamburger menu click this function is activated
+const mobMenu = () => {
+  for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", mobMenu);
+  }
+  if (nav.classList.contains("responsive")) {
+    navi.classList.remove("responsive");
+    nav.classList.remove("responsive");
+    document.body.style.overflow = "";
+  } else {
+    navi.classList.add("responsive");
+    nav.classList.add("responsive");
+    document.body.style.overflow = "hidden";
+  }
+};
 
 button.addEventListener("click", getToTop);
-// mobButton.addEventListener("click", mobMenu);
-
-// function scrollFunction() {
-//   if (
-//     document.body.scrollTop > 200 ||
-//     document.documentElement.scrollTop > 200
-//   ) {
-//     header.style.backgroundColor = "#ffbf71";
-//   } else {
-//     header.style.backgroundColor = "#ff8c00";
-//   }
-// }
-
-// const scrollFunction = () =>
-//   document.body.scrollTop > 200 || document.documentElement.scrollTop > 200
-//     ? (header.style.backgroundColor = "white")
-//     : (header.style.backgroundColor = "#82a8c7");
+mobButton.addEventListener("click", mobMenu);
