@@ -3,6 +3,7 @@ const button = document.querySelector("#arrowUp");
 const mobButton = document.querySelector("#mobileButton");
 const nav = document.querySelector("nav");
 const links = document.querySelectorAll("nav ul li a");
+const body = document.querySelector("body");
 
 //On scroll activate scrollFunction
 window.onscroll = function () {
@@ -42,5 +43,14 @@ const mobMenu = () => {
   }
 };
 
+const removeMenu = (e) => {
+  if (!body.contains(e.target)) {
+    navi.classList.remove("responsive");
+    nav.classList.remove("responsive");
+    document.body.style.overflow = "";
+  }
+};
+
+body.addEventListener("click", removeMenu);
 button.addEventListener("click", getToTop);
 mobButton.addEventListener("click", mobMenu);

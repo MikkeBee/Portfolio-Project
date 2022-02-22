@@ -504,6 +504,7 @@ footer {
     top: 6.5rem;
     width: 60%;
     display: block;
+    transition: width 2s, height 2s, transform 2s;
   }
 
   nav.responsive ul li a {
