@@ -10,22 +10,23 @@
     />
     <meta name="author" content="Michael Blakley" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Voltaire&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/06ae1c778f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/06ae1c778f.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <title>Mikke's Portfolio Project</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
   </head>
   <body>
-    
     <header class="hero">
-      
       <nav class="naviBar">
         <h2 class="itsameMikke"><a href="#">Michael Blakley</a></h2>
         <button id="mobileButton"><i class="fa-solid fa-bars"></i></button>
@@ -33,6 +34,7 @@
           <li><a href="#projectSect">Projects</a></li>
           <li><a href="#meAbout">About Me</a></li>
           <li><a href="#alltheSkills">Skills</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="#bigFoot">Contact Me</a></li>
         </ul>
       </nav>
@@ -41,7 +43,6 @@
       </div>
     </header>
     <main>
-      
       <i class="fa-solid fa-circle-arrow-up" id="arrowUp"></i>
       <section id="projectSect">
         <h2 class="myProject">Projects</h2>
@@ -126,47 +127,45 @@
             <i class="fa-brands fa-html5 fa-10x"></i>
             <div class="skillCardContainer">
               <h4><b>HTML</b></h4>
-              <progress id="htmlPogress" value="50" max="100"> 50% </progress>
+              <progress id="htmlPogress" value="50" max="100">50%</progress>
             </div>
           </div>
           <div class="skillCard">
             <i class="fa-brands fa-css3 fa-10x"></i>
             <div class="skillCardContainer">
               <h4><b>CSS</b></h4>
-              <progress id="cssPogress" value="50" max="100"> 50% </progress>
+              <progress id="cssPogress" value="50" max="100">50%</progress>
             </div>
           </div>
           <div class="skillCard">
             <i class="fa-brands fa-js fa-10x"></i>
             <div class="skillCardContainer">
               <h4><b>JavaScript</b></h4>
-              <progress id="jsPogress" value="30" max="100"> 30% </progress>
+              <progress id="jsPogress" value="30" max="100">30%</progress>
             </div>
           </div>
-        <div class="skillCard">
-          <i class="fa-solid fa-pen-ruler fa-10x"></i>
-          <div class="skillCardContainer">
-            <h4><b>UI Design</b></h4>
-            <progress id="uiPogress" value="40" max="100"> 40% </progress>
+          <div class="skillCard">
+            <i class="fa-solid fa-pen-ruler fa-10x"></i>
+            <div class="skillCardContainer">
+              <h4><b>UI Design</b></h4>
+              <progress id="uiPogress" value="40" max="100">40%</progress>
+            </div>
           </div>
-      </div>
-      <div class="skillCard">
-        <i class="fa-solid fa-list-check fa-10x"></i>
-        <div class="skillCardContainer">
-          <h4><b>Project Mgmt</b></h4>
-          <progress id="uiPogress" value="80" max="100"> 80% </progress>
+          <div class="skillCard">
+            <i class="fa-solid fa-list-check fa-10x"></i>
+            <div class="skillCardContainer">
+              <h4><b>Project Mgmt</b></h4>
+              <progress id="pmPogress" value="80" max="100">80%</progress>
+            </div>
+          </div>
+          <div class="skillCard">
+            <i class="fa-solid fa-beer-mug-empty fa-10x"></i>
+            <div class="skillCardContainer">
+              <h4><b>Other</b></h4>
+              <progress id="otherPogress" value="90" max="100">90%</progress>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="skillCard">
-      <i class="fa-solid fa-beer-mug-empty fa-10x"></i>
-      <div class="skillCardContainer">
-        <h4><b>Other</b></h4>
-        <progress id="otherPogress" value="90" max="100"> 90% </progress>
-      </div>
-  </div>
-
-
-        
       </section>
     </main>
     <footer id="bigFoot">
@@ -190,13 +189,16 @@
             rows="8"
           ></textarea>
         </p>
-        <button class="theButton">Send it! <i class="fa-solid fa-angles-right"></i></button>
+        <button class="theButton">
+          Send it! <i class="fa-solid fa-angles-right"></i>
+        </button>
       </form>
       <p>Did you know I'm on CodeWars?</p>
 
       <img
         src="https://www.codewars.com/users/MikkeBee/badges/small"
-        alt="Codewars badge" class="codeBadge"
+        alt="Codewars badge"
+        class="codeBadge"
       />
       <!-- Temporary br tags until better styling can be made -->
       <br /><br />
