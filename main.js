@@ -43,8 +43,9 @@ const mobMenu = () => {
   }
 };
 
-const removeMenu = (e) => {
-  if (!body.contains(e.target)) {
+const removeMenu = (event) => {
+  if (event.target.closest("nav")) return;
+  if (nav.classList.contains("responsive")) {
     navi.classList.remove("responsive");
     nav.classList.remove("responsive");
     document.body.style.overflow = "";
