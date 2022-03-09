@@ -64,6 +64,20 @@ body {
   font-weight: 600;
 }
 
+.rugball {
+  max-width: 1000px;
+  max-height: 874px;
+  height: auto;
+  width: auto;
+}
+
+.blacksmith {
+  max-width: 1000px;
+  max-height: 748px;
+  height: auto;
+  width: auto;
+}
+
 a {
   color: white;
   text-decoration: none;
