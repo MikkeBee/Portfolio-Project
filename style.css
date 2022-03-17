@@ -136,7 +136,7 @@ main {
   background-color: white;
   padding-top: 2rem;
   padding-left: 2.5rem;
-  padding-right: 1.5rem;
+  padding-right: 2.5rem;
   padding-bottom: 2rem;
 }
 
@@ -145,57 +145,63 @@ main {
 }
 
 /*Outer div for card section. For Projects*/
-.cardset {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  z-index: 02;
+.gridContainer {
+  max-width: 100vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.cardSet {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: white;
 }
 
 /*inner div that wraps individual cards*/
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 5px;
-  transition: 1s;
+  height: 18rem;
+  border-radius: 5px 5px 0 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-.card:hover {
+.cardSet:hover {
   transform: scale(110%);
   transition: 1s;
 }
 
 .poke {
   width: 100%;
-  height: auto;
+  max-height: 100%;
+  padding: 1rem;
 }
 
 .speedgame {
   width: 100%;
-  height: auto;
+  max-height: 100%;
+  padding: 1rem;
 }
 
 .listMaker {
   width: 100%;
-  height: auto;
+  max-height: 100%;
+  padding: 1rem;
 }
 
 /* div for card content except image*/
 .card1container {
-  padding: 0.5rem 0.5rem;
+  padding: 0.2rem 1rem 1rem 1rem;
 }
 
 .card1container p {
-  width: 24rem;
+  padding-top: 0.3rem;
 }
 
 .card1container a {
   color: #2023bd;
+  font-weight: 600;
 }
 
 /*Outer section for About Me*/
@@ -490,21 +496,6 @@ footer {
   grid-area: forest;
 }
 
-@media (max-width: 854px) {
-  .hero {
-    background-image: url("Geiranger-fjord.png");
-    min-height: 30rem;
-    width: 100%;
-    height: auto;
-    background-position: center;
-    background-size: 180% auto;
-    /* background-attachment: fixed; */
-    background-repeat: no-repeat;
-    position: relative;
-    margin: 0 auto;
-  }
-}
-
 @media (max-width: 1280px) {
   .hero {
     background-image: url("Geiranger-fjord.png");
@@ -517,6 +508,15 @@ footer {
     background-repeat: no-repeat;
     position: relative;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 1166px) {
+  .card {
+    height: 15rem;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -543,6 +543,29 @@ footer {
     height: auto;
     background-position: center;
     background-size: 140% auto;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .gridContainer {
+    max-width: 100vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 854px) {
+  .hero {
+    background-image: url("Geiranger-fjord.png");
+    min-height: 30rem;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: 180% auto;
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
     position: relative;
@@ -669,6 +692,13 @@ footer {
     transform: translateY(6px);
   }
 
+  .card {
+    height: 12rem;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+  }
+
   .myPhoto {
     width: 60%;
     height: 60%;
@@ -712,6 +742,15 @@ footer {
     color: white;
     font-size: medium;
     font-style: italic;
+  }
+}
+
+@media (max-width: 700px) {
+  .card {
+    height: 10rem;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -848,6 +887,22 @@ footer {
     font-size: small;
     font-style: italic;
   }
+
+  .gridContainer {
+    max-width: 100vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .card {
+    height: 15rem;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+  }
+
   .myPhoto {
     width: 60%;
     height: 60%;
@@ -891,16 +946,19 @@ footer {
     text-shadow: 0 0 20px #000000, 0 0 20px #000000, 0 0 20px #000000;
   }
 
+  .card {
+    height: 12rem;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+  }
+
   .skillCard i {
     font-size: 7rem;
   }
 }
 
 @media (max-width: 508px) {
-  .cardset {
-    flex-direction: column;
-  }
-
   .skillCard i {
     font-size: 5rem;
   }
@@ -977,10 +1035,27 @@ footer {
   }
 }
 
+@media (max-width: 400px) {
+  .gridContainer {
+    max-width: 100vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .card {
+    height: 15rem;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
 @media (max-width: 369px) {
   .hero {
     background-image: url("Geiranger-fjord.png");
-    min-height: 17rem;
+    min-height: 11rem;
     width: 100%;
     height: auto;
     background-position: center;
@@ -997,9 +1072,31 @@ footer {
     align-items: center;
     text-align: center;
     color: white;
-    padding-top: 10rem;
+    padding-top: 7rem;
     font-size: 1.8rem;
     font-weight: 400;
     text-shadow: 0 0 20px #000000, 0 0 20px #000000, 0 0 20px #000000;
+  }
+
+  .naviBar {
+    position: fixed;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 0 0 10px #353535, 0 0 10px #353535, 0 0 10px #353535;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-decoration: none;
+  }
+
+  nav.responsive ul {
+    position: absolute;
+    left: 0;
+    top: 5.5rem;
+    width: 60%;
+    display: block;
+    transition: width 2s, height 2s, transform 2s;
   }
 }
