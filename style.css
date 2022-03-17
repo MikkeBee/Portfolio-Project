@@ -22,6 +22,7 @@ body {
   background-repeat: no-repeat;
   position: relative;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .hero:hover {
