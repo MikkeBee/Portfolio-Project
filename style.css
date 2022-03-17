@@ -25,10 +25,6 @@ body {
   z-index: 1;
 }
 
-.hero:hover {
-  filter: contrast(80%);
-}
-
 /* background for navbar on scroll*/
 /* .hero::after {
   content: "";
@@ -903,10 +899,6 @@ footer {
 @media (max-width: 508px) {
   .cardset {
     flex-direction: column;
-  }
-
-  .card {
-    margin: 1rem 1rem;
   }
 
   .skillCard i {
