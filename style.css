@@ -149,13 +149,14 @@ main {
 /*Outer div for card section. For Projects*/
 .cardset {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /*inner div that wraps individual cards*/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0 1rem;
+  margin: 1rem;
   padding: 1rem;
   border-radius: 5px;
   transition: 1s;
@@ -172,18 +173,18 @@ main {
 }
 
 .poke {
-  max-width: 400px;
-  max-height: 350px;
+  width: 100%;
+  height: auto;
 }
 
 .speedgame {
-  max-width: 400px;
-  max-height: 350px;
+  width: 100%;
+  height: auto;
 }
 
 .listMaker {
-  max-width: 400px;
-  max-height: 350px;
+  width: 100%;
+  height: auto;
 }
 
 /* div for card content except image*/
