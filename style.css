@@ -70,20 +70,6 @@ body {
   font-weight: 600;
 }
 
-.rugball {
-  max-width: 1000px;
-  max-height: 874px;
-  height: auto;
-  width: auto;
-}
-
-.blacksmith {
-  max-width: 1000px;
-  max-height: 748px;
-  height: auto;
-  width: auto;
-}
-
 a {
   color: white;
   text-decoration: none;
@@ -163,16 +149,20 @@ main {
 /*Outer div for card section. For Projects*/
 .cardset {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 /*inner div that wraps individual cards*/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 0 1rem;
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 5px;
   transition: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card:hover {
@@ -181,9 +171,28 @@ main {
   z-index: 1;
 }
 
+.poke {
+  max-width: 400px;
+  max-height: 350px;
+}
+
+.speedgame {
+  max-width: 400px;
+  max-height: 350px;
+}
+
+.listMaker {
+  max-width: 400px;
+  max-height: 350px;
+}
+
 /* div for card content except image*/
 .card1container {
   padding: 0.5rem 0.5rem;
+}
+
+.card1container p {
+  width: 24rem;
 }
 
 .card1container a {
